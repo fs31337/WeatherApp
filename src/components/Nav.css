@@ -1,0 +1,25 @@
+#logoHenry {
+  margin-right: 20px;
+}
+.navbarstyle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(235, 168, 143, 0.3);
+    backdrop-filter: blur(20px);
+    color:white;
+    padding-right: 10px;
+}
+.logo {
+    display:flex;
+    align-items: center;
+}
+.logo > p {
+    margin-top: 12px;
+}
+
+.logoHenry {
+  margin-right: 20px;
+  margin-left: 10px;
+}
