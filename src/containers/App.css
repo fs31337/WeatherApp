@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  height:100%;
   background: linear-gradient(to bottom, #1e5799 0%,#207cca 40%,#207cca 40%,#2989d8 50%,#2989d8 50%,#7db9e8 77%,#dae0e5 100%);
 }
 

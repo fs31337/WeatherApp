@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './SearchBar.scss';
 
 export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
@@ -9,13 +10,13 @@ export default function SearchBar({ onSearch }) {
       setCity(""); //Agregado para que se limpie el input y el estado de city que lo representa despues de un submit.
     }}>
       <input
-        className = "form-control mr-sm-2"
+        className = "search-bar--form form-control mr-sm-2"
         type="text"
         placeholder="Ciudad..."
         value={city}
         onChange={e => setCity(e.target.value)}
       />
-      <input className="btn btn-outline-success my-2 my-sm-0" type="submit" value="Agregar" />
+      <input className="search-bar--button btn btn-outline-success" type="submit" value="Agregar" />
     </form>
   );
 }

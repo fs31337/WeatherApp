@@ -1,20 +1,26 @@
 import React from 'react';
-import Logo from '../logoHenry.png'
+// import Logo from '../img/logoHenry.png'
 import SearchBar from './SearchBar.jsx';
-import './Nav.css';
-import styles from './Nav.modules.css';
+import { Link } from 'react-router-dom';
+import './Nav.scss';
 
-function Nav({ onSearch }) { //agrego cities
+
+function Nav({ onSearch }) {
   return (
-    <div>
-      <nav className=" navbarstyle">
-        <div className="logo">
-          <img src={Logo} alt="Henry Logo" className="logoHenry" />
-          <p>Henry - Weather App</p>
-        </div>
-        <SearchBar onSearch={onSearch}/>
-      </nav>
-    </div>
+    <nav className="navbar">
+      <Link to='/'>
+        <span className="navbar-brand">
+          {/* <img id="logoHenry" src={} width="30" height="30" className="d-inline-block align-top" alt="" /> */}
+          Weather App
+        </span>
+      </Link>
+      <SearchBar
+        onSearch={onSearch}
+      />
+      <Link to = '/about'>
+        <span className="navbar-about">About</span>
+      </Link>
+    </nav>
   );
 };
 

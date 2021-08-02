@@ -1,15 +1,17 @@
 {
-  "name": "08-react-estados-lifecycles",
+  "name": "WeatherApp",
   "version": "1.0.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^13.1.1",
+    "node-fetch": "^2.6.1",
+    "prompt-sync": "^4.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "node-fetch": "^2.6.1",
-    "prompt-sync": "^4.2.0"
+    "sass": "^1.35.2"
   },
   "scripts": {
     "start": "react-scripts start",
