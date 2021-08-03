@@ -5,6 +5,7 @@ import Nav from "../components/Nav.jsx";
 import Cards from "../components/Cards.jsx";
 import About from "../components/About.jsx";
 import Ciudad from "../components/Ciudad.jsx";
+import Swal from 'sweetalert2';
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -33,7 +34,12 @@ function App() {
           };
           setCities((oldCities) => [...oldCities, ciudad]);
         } else {
-          alert("Ciudad no encontrada");
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Ciudad no encontrada',
+            footer: 'Prueba buscar otra ciudad!'
+          })
         }
       });
   }
